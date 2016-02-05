@@ -113,8 +113,8 @@
     _contentViewShadowOpacity = 0.4f;
     _contentViewShadowRadius = 8.0f;
     _contentViewFadeOutAlpha = 1.0f;
-    _contentViewInLandscapeOffsetCenterX = 30.f;
-    _contentViewInPortraitOffsetCenterX  = 30.f;
+    _contentViewInLandscapeOffsetCenterX = 80.f;
+    _contentViewInPortraitOffsetCenterX  = 80.f;
     _contentViewScaleValue = 0.7f;
 }
 
@@ -437,6 +437,8 @@
     self.contentButton.autoresizingMask = UIViewAutoresizingNone;
     self.contentButton.frame = self.contentViewContainer.bounds;
     self.contentButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.contentButton.backgroundColor = [UIColor blackColor];
+    self.contentButton.alpha = 0.5f;
     [self.contentViewContainer addSubview:self.contentButton];
 }
 
