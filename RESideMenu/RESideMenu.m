@@ -113,8 +113,10 @@
     _contentViewShadowOpacity = 0.4f;
     _contentViewShadowRadius = 8.0f;
     _contentViewFadeOutAlpha = 1.0f;
-    _contentViewInLandscapeOffsetCenterX = 80.f;
-    _contentViewInPortraitOffsetCenterX  = 80.f;
+    CGFloat menuWidth = 240.0f;
+    CGFloat offsetCenterX = menuWidth - [UIScreen mainScreen].bounds.size.width / 2.0f;
+    _contentViewInLandscapeOffsetCenterX = offsetCenterX;
+    _contentViewInPortraitOffsetCenterX  = offsetCenterX;
     _contentViewScaleValue = 0.7f;
 }
 
