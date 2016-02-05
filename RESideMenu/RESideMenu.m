@@ -437,8 +437,6 @@
     self.contentButton.autoresizingMask = UIViewAutoresizingNone;
     self.contentButton.frame = self.contentViewContainer.bounds;
     self.contentButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.contentButton.backgroundColor = [UIColor blackColor];
-    self.contentButton.alpha = 0.5f;
     [self.contentViewContainer addSubview:self.contentButton];
 }
 
